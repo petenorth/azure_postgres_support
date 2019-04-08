@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sku": {
+            "value": {
+                "capacity": 2,
+                "family": "Gen5",
+                "name": "B_Gen5_2",
+                "tier": "Basic"
+            }
+        },
+        "storageProfile": {
+            "value": {
+                "backupRetentionDays": 7,
+                "geoRedundantBackup": "Disabled",
+                "storageMB": 51200
+            }
+        },
+    }
+}
+
